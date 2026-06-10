@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.day {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.day:hover {
+    background-color: #e8e8e8;
+}
+
+#selectedDate {
+    margin: 20px 0;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#taskList {
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    list-style: none;
+    background: white;
+    width: 600px;
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
